@@ -1,6 +1,6 @@
 # we will install nginx by using playbook
 - name: install & run nginx
-  hosts: localhostss
+  hosts: localhost
   become: yes # this will give root acess
   tasks:
   - name: installing nginx by using playbook
