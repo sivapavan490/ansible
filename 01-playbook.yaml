@@ -1,0 +1,9 @@
+# this is my 1st playbook
+#playbook is a list of plays, alwas it should starts with " - "
+
+name: ping the node
+#under the host section we can mention IP address or we can mention our inventory file name
+hosts: 142.56.80.88 #0r hosts: mongodb
+tasks:
+- name: pinging the server
+  

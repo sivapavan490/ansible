@@ -1,2 +1,16 @@
-name: sivakumar
-dob: 01-03-1998
+-  name: sivakumar
+   dob: 01-03-1998
+   #This is map of adress we mention in yaml
+   address:
+    city: ongole
+    country: India
+    dno: 45
+    street: mainroad
+  #this is list of adress we mention in yaml
+    address:
+    - type: permanent
+      city: ongole
+      country: India
+    - type: current
+      city: hydreabad
+      country: India

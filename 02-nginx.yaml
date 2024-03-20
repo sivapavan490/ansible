@@ -1,0 +1,12 @@
+# we will install nginx by using playbook
+- name: install & run nginx
+  hosts: localhost
+  become: yes # this will give root acess
+  tasks:
+  - name: installing nginx by using playbook
+    ansible.builtin.yum:
+      name: nginx
+      state: installed
+    ansible.builtin.service:
+      name: nginx
+      state: started
