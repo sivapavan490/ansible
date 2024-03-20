@@ -1,0 +1,10 @@
+- name: variables ina ansible
+  hosts:  localhost
+  vars:
+    course: Devops with aws
+    duration: 110hrs
+  tasks:
+  #we refer variables in ansible {{variable name}}
+  - name: print variables
+    ansible.builtin.debug:
+      msg: "hello, i am learing {{course}},duration is {{duration}}"
