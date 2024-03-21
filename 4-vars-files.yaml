@@ -1,0 +1,11 @@
+#kepping variables in single yaml file (variables.yaml) and refering those variables in playbooks (vars-files.yaml)
+
+- name: using variables from another yaml file in this playbook
+  hosts: localhost
+  become: yes
+  vars_files:
+  - variables.yaml
+  tasks:
+  - name: printing variables from different folder
+    ansible.builtin.debug:
+      msg: "we are earining {{course}},duration is {{duration}}"
